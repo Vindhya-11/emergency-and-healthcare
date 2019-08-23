@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  border: 2px solid black;
+  padding: 25px;
+  background-image: url("data:image/jpeg;base64,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");
+
+  /* Full height */
+  height: 100vh;
+width:100%
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<BODY>
+<H1 ><CENTER><U>Health Tips</U></CENTER></H1>
+<HR SIZE=5>
+<div id="bg">
+
+</div>
+<P>We've done the legwork for you and here they are: the 10 best health tips. Make that 10 - taking the time to read this tops the list.
+We've done the legwork for you and here they are: the 10 best health tips. Make that 10- taking the time to read this tops the list.
+
+
+<P><STRONG>1. Copy your kitty:</STRONG> Learn to do stretching exercises when you wake up. It boosts circulation and digestion, and eases back pain.
+
+<P><STRONG>2. Don’t skip breakfast.</STRONG> Studies show that eating a proper breakfast is one of the most positive things you can do if you are trying to lose weight. Breakfast skippers tend to gain weight. A balanced breakfast includes fresh fruit or fruit juice, a high-fibre breakfast cereal, low-fat milk or yoghurt, wholewheat toast, and a boiled egg.
+
+<P><STRONG>3. Brush up on hygiene.</STRONG> Many people don't know how to brush their teethproperly. Improper brushing can cause as much damage to the teeth and gums as not brushing at all. Lots of people don’t brush for long enough, don’t floss and don’t see a dentist regularly. Hold your toothbrush in the same way that would hold a pencil, and brush for at least two minutes. 
+
+This includes brushing the teeth, the junction of the teeth and gums, the tongue and the roof of the mouth. And you don't need a fancy, angled toothbrush – just a sturdy, soft-bristled one that you replace each month.
+
+<P><STRONG>4. Neurobics for your mind.</STRONG> Get your brain fizzing with energy. American researchers coined the term ‘neurobics’ for tasks which activate the brain's own biochemical pathways and to bring new pathways online that can help to strengthen or preserve brain circuits. 
+
+<P>Brush your teeth with your ‘other’ hand, take a new route to work or choose your clothes based on sense of touch rather than sight. People with mental agility tend to have lower rates of Alzheimer's disease and age-related mental decline.
+
+<P><STRONG>5. Get what you give! Always giving and never taking?</STRONG> This is the short road to compassion fatigue. Give to yourself and receive from others, otherwise you’ll get to a point where you have nothing left to give. And hey, if you can’t receive from others, how can you expect them to receive from you?
+
+Read: Mind aerobics
+
+<P><STRONG>6. Get spiritual.</STRONG> A study conducted by the formidably sober and scientific Harvard University found that patients who were prayed for recovered quicker than those who weren’t, even if they weren’t aware of the prayer.
+
+<P><STRONG>7. Get smelly.</STRONG> Garlic, onions, spring onions and leeks all contain stuff that’s good for you. A study at the Child’s Health Institute in Cape Town found that eating raw garlic helped fight serious childhood infections. Heat destroys these properties, so eat yours raw, wash it down with fruit juice or, if you’re a sissy, have it in tablet form.
+
+<P><STRONG>8. Knock one back.</STRONG> A glass of red wine a day is good for you. A number of studies have found this, but a recent one found that the polyphenols (a type of antioxidant) in green tea, red wine and olives may also help protect you against breast cancer. It’s thought that the antioxidants help protect you from environmental carcinogens such as passive tobacco smoke.
+
+<P><STRONG>9. Bone up daily.</STRONG> Get your daily calcium by popping a tab, chugging milk or eating yoghurt. It’ll keep your bones strong. Remember that your bone density declines after the age of 30. You need at least 200 milligrams daily, which you should combine with magnesium, or it simply won’t be absorbed.
+
+<P><STRONG>10. Berries for your belly.</STRONG> Blueberries, strawberries and raspberries contain plant nutrients known as anthocyanidins, which are powerful antioxidants. Blueberries rival grapes in concentrations of resveratrol – the antioxidant compound found in red wine that has assumed near mythological proportions. Resveratrol is believed to help protect against heart disease and cancer.
+</P>
+
+
+</BODY>
+</HEAD>
+</HTML>
