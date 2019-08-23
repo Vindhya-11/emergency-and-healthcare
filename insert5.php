@@ -4,7 +4,7 @@
  $Dob = filter_input(INPUT_POST, 'Dob');
  $Phone = filter_input(INPUT_POST, 'Phone');
  $Aadhar_number = filter_input(INPUT_POST, 'Aadhar_number');
- $Address = filter_input(INPUT_POST, 'address');
+ $Address = filter_input(INPUT_POST, 'Address');
  $Gender = filter_input(INPUT_POST, 'Gender');
  $Password = filter_input(INPUT_POST, 'Password');
  $Confirm_password = filter_input(INPUT_POST, 'Confirm_password');
