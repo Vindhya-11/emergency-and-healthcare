@@ -1,399 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>GEN-y Forms</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+     padding-top: 50px;
+      background-color: #cccccc;
+      height: 0;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: red;
+width: 50%;
+     /* padding: 15px;*/
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+	body
+{
+	
+	background-color: #cccccc;
+}
+  </style>
 </head>
 <body>
-
-    <!--================Header Menu Area =================-->
-    <header class="header_area">
-        <div class="top_menu row m0">
-           <div class="container">
-               <div class="float-left">
-                <a class="dn_btn" href=""><i class="ti-mobile"></i>+91-9873424843</a>
-                <span class="dn_btn"> <i class="ti-location-pin"></i> SRM Institute of Science and Technology</span>
-            </div>
-            <div class="float-right">
-                <span class="follow_us">Follow us: </span>
-                <ul class="list header_social">
-                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                    <li><a href="#"><i class="ti-twitter"></i></a></li>
-                    <li><a href="#"><i class="ti-instagram"></i></a></li>
-                    <li><a href="#"><i class="ti-skype"></i></a></li>
-                    <li><a href="#"><i class="ti-vimeo"></i></a></li>
-                </ul> 
-            </div>
-        </div>  
-    </div>  
-    <div class="main_menu">
-       <nav class="navbar navbar-expand-lg navbar-light">
-           <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <a class="navbar-brand logo_h" href="index.html">sintac</a>
-                          <!-- Collect the nav links, forms, and other content for toggling -->
-             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                <ul class="nav navbar-nav menu_nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                    
-                    
-                        
-                    
-                    <li class="nav-item active"><a class="nav-link" href="contact.html">FORMS</a></li>
-                </ul>
-            </div>
-      <div class="right-button">
-        
-    </div> 
-</div>
-</nav>
-
-</div>
-</header>
-<!--================Header Menu Area =================-->
-
- 
-  <!--================Hero Banner Area Start =================-->
-  <section class="hero-banner hero-banner-sm">
-    <div class="container text-center">
-      <h2>FORMS ARE HERE!!</h2>
-      <nav aria-label="breadcrumb" class="banner-breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-        </ol>
-      </nav>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Profile</a>
     </div>
-  </section>
-  <!--================Hero Banner Area End =================-->
-
-
-  <!-- ================ contact section start ================= -->
-  <section class="contact-section area-padding">
-    <div class="container">
-      <div class="d-none d-sm-block mb-5 pb-4">
-                
-
-
-      <div class="row">
-        <div class="col-13">
-          <h2 class="contact-title">Fill The Form Details</h2>
-        </div>
-        <div class="col-lg-10">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-            <div class="row">
-              <!--<div class="col-12">
-                <div class="form-group">
-                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="2" placeholder="Enter Your College Name"></textarea>
-                </div>
-              </div>-->
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="First Name">
-                </div>
-              </div>
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Surname">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="D.O.B">
-                </div>
-              </div>
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Age">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Nationality">
-                </div>
-              </div>
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Religion	">
-                </div>
-              </div>
-			  
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" placeholder="Enter email address">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Enter phone number	">
-                </div>
-              </div>
-			  
-			  <div class="col-13">
-				<h2 class="contact-title">Parent Details</h2>
-				</div>
-              <div class="col-12">
-                <div class="form-group">
-                  <input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Father's Name">
-                </div>
-				<div class="form-group">
-                  <input class="form-control" name="college" id="college" type="text" placeholder="Enter Mother's Name">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Father's Profession">
-                </div>
-              </div>
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Mother's Profession">
-                </div>
-              </div>
-			  
-			  <div class="col-12">
-                <div class="form-group">
-                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="4" placeholder="Enter Your Residential Address"></textarea>
-                </div>
-              </div>
-			  
-			  <div class="col-sm-11">
-                <p>Are you differently abled?</p>
-              </div>
-			  
-			  
-			  
-			  
-			  <div class="control">
-  <label class="radio">
-    <input type="radio" name="answer">
-    Yes
-  </label>
-  <label class="radio">
-    <input type="radio" name="answer">
-    No
-  </label>
-</div>
-			  <div class="col-12">
-          <h2 class="contact-title">Education Details</h2>
-        </div>
-			  
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" placeholder="Class 12th">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Class 10th">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Name of the board">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Name of the board">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Percentage">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Percentage">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Year of Passing">
-                </div>
-              </div>
-			  
-			  <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Year of Passing">
-                </div>
-              </div>
-			  
-			  <div class="col-12">
-          <h2 class="contact-title">Declaration</h2>
-        </div>
-		
-			<label class="checkbox">
-  <input type="checkbox">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="dasbboard.html">Home</a></li>
+       <!--<li><a href="#">About</a></li>0-->
+        <li><a href="myactivities.html">My Activities</a></li>
+        <li class="active"><a href="">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
   
-</label>
-		
-			<div class="col-sm-11">
-                <p>I certify that the information submitted by me in support of this application is true to the best of my knowledge and belief. I understand in the event of any information being found false or incorrect, my admission is liable to be rejected/canceled at any stage of program.I undertake to abide by the disciplinary rules and regulations of the institute.</p>
-              </div>
-			  
-            </div>
-            <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm">Submit</button>
-            </div>
-          </form>
-
-
-        </div>
-
-        <div >
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Health Tips</a></p>
+      <p><a href="#">Doctors</a></p>
+      <p><a href="login.html">Logout</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Welcome</h1>
+      <p>this is the contact page</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
       </div>
     </div>
-  </section>
-  <!-- ================ contact section end ================= -->
-<!--================ End Blog Area =================-->
-
-<footer class="footer-area ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4  col-md-6">
-                <div class="single-footer-widget">
-                    
-                    <div class="row">   
-                        
-                    
-            </div>
-
-        </div>
-    </div>
-    <div class="col-lg-4  col-md-6">
-        <div class="single-footer-widget mail-chimp">
-            <h6 class="mb-20">Business Hours</h6>
-            <ul class="business-hour">
-                <li>Monday - Friday : <span>9:00 am - 18:00 pm</span>   </li>
-                <li>Saturday :<span>9:00 am - 16:00 pm</span></li>
-                <li>Sunday :<span>Closed</span></li>
-            </ul>
-            <p>We work all the holidays!</p>
-        </div>
-    </div>
-    <div class="col-lg-4  col-md-12">
-        <div class="single-footer-widget newsletter">
-            <h6>Email Newsletter</h6>
-            <div id="mc_embed_signup">
-                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                method="get" class="form-inline">
-
-                <div class="form-group row no-gutters">
-                    <div class="col-lg-8 col-md-8 col-7">
-                        <input name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
-                        required="" type="email">
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-5">
-                        <button class="nw-btn main_btn circle">subscribe
-                            <span class="lnr lnr-arrow-right"></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="info"></div>
-            </form>
-        </div>
-        <p></p>
-        
-    </div>
-</div>
+  </div>
 </div>
 
+<!--<footer class="container-fluid text-center">*/
+  /*<p>Footer Text</p>*/
+/*</footer>-->
 
-</div>
-
-<div class="footer-bottom">
-    <div class="container">
-        <div class="row ">
-            
-        </div>    
-    </div>  
-</div>
-
-</footer>
-<!--================ End footer Area =================-->
-
-
-
-<!--================Contact Success and Error message Area =================-->
-    <div id="success" class="modal modal-message fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <h2>Thank you</h2>
-                    <p>Your message is successfully sent...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modals error -->
-
-    <div id="error" class="modal modal-message fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <h2>Sorry !</h2>
-                    <p> Something went wrong </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--================End Contact Success and Error message Area =================-->
-
-
-
-
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/stellar.js"></script>
-<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="vendors/isotope/isotope.pkgd.min.js"></script>
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/jquery.form.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/theme.js"></script>
 </body>
 </html>
