@@ -14,12 +14,13 @@ $host = "localhost";
 $dbusername = "root";
 $dbpassword = "";
 $dbname = "file1";
-// Create connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 $sql = "INSERT INTO patient1(Name, Email_id, Dob, Phone, Aadhar_number, Address, Gender, Password, Confirm_password)
 values ('".$Name."','".$Email_id."','".$Dob."','".$Phone."','".$Aadhar_number."','".$Address."','".$Gender."','".$Password."','".$Confirm_password."')";
 if($conn->query($sql)){
 	echo $Name." has been added.";
+	//echo 'Go back to login page';
+echo '<a href="login.html"> Go back to login page</a>';
 }
 else{
 	echo "Error: ". $sql ."". $conn->error;
